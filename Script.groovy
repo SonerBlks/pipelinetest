@@ -9,7 +9,6 @@ pipeline{
     stage('TWO'){
       steps{
         echo'Stage two: Trying to open the file'
-        sh 'java /home/aselsan/Desktop/java1.java'
       }
     }
   }
