@@ -13,15 +13,15 @@ pipeline{
     }
     stage('Parallel Stage') {
             parallel {
-                stage('Branch A') {
+                stage('Stage A') {
                     steps {
-                        echo "On Branch A"
+                        echo "On Stage A"
                         sh 'java /home/aselsan/Desktop/java1.java'
                     }
                 }
-                stage('Branch B') {
+                stage('Stage B') {
                     steps {
-                        echo "On Branch B"
+                        echo "On Stage B"
                         sh 'python3 /home/aselsan/Desktop/python1.py'
                     }
                 }
